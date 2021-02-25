@@ -1,0 +1,317 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+body{
+	background-image: linear-gradient(to right, lightBlue, white);
+	font-family:'EB Garamond', serif;
+}
+
+
+.contenedor-detodo{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+header{
+	background-image: linear-gradient(to right, lightBlue, white);
+	width: 100%;
+	height: 50px;
+	border: solid 1px black;
+	font-size: 10px;
+	text-align: center;
+	font-weight: bolder;
+	text-decoration: none;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	line-height: 0,10;
+	color: black;
+	font-family: 'EB Garamond', serif;
+}
+
+
+.main{
+	width: 100%;
+	height: 1100px;
+	background-image: linear-gradient(to bottom, lightBlue, white);
+	float: left;
+	box-sizing: border-box;
+}
+
+
+.main img{
+	width: 100%;
+	height: auto;
+}
+
+
+img:hover{
+	transform(0px,-30px,0.5);
+    border-radius: 50%;
+    filter: opacity(.5);
+}
+
+
+footer{
+	background-image: linear-gradient(to right, lightBlue, white);
+	height: 410px;
+	font-family: 'EB Garamond', serif;
+	border: solid 1px black;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	clear: both;
+	float: left;
+	margin-top: 20px;
+	box-sizing: border-box;
+	width: 100%;
+	flex-direction: row;
+}
+
+
+.nav-item, .nav-item-dropdown, .dropdown-menu{
+	font-family: 'EB Garamond', serif;
+	color: lightBlue;
+}
+
+
+p{
+	text-align: center;
+}
+
+
+/* Inicio */
+.intro{
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin: 0px auto;
+	width: 400px;
+	text-align: center;
+}
+
+
+.slider{
+	width: 95%
+	margin: auto;
+	overflow: hidden;
+}
+
+
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+
+	animation: cambio 10s infinite;
+	animation-timing-function: ease-in;
+}
+
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+
+.slider img{
+	width: 100%;
+}
+
+
+@keyframes cambio{
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+/* Quienes somos */
+.presentacion{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	justify-content: space-around;
+}
+
+
+.whatwedo{
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.row{
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+}
+
+
+/* Productos */
+.servicios{
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+}
+
+
+/* Submenu productos */
+.productoBordado, .productoClasico, .productoEstampado{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	justify-content: space-around;
+}
+
+
+.tabla{
+margin-left: 30px;
+	margin-right: 30px;
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+/* Contacto */
+.info{
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+form{
+	background-color: lightBlue;
+	background: rgba(0,0,0,0.4);
+	margin: auto;
+	width: 450px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.contacto{
+	font-weight: bolder;
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+}
+
+
+input, textarea{
+	width: 300px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-family: 'EB Garamond', serif;
+}
+
+
+textarea{
+	min-height: 100px;
+	max-height: 200px;
+}
+
+
+#enviar{
+	background-color: #34495E ;
+	padding: 10px;
+}
+
+
+#enviar:hover{
+	cursor: pointer;
+}
+
+
+#nombre, #apellido, #mail, #mensaje{
+	width: 80%;
+}
+
+
+/* Redes sociales */
+.social-media{
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+
+.icon{
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+
+.icon-facebook{
+	background: #2471A3;
+}
+
+
+.icon-instagram{
+	background: #F1948A;
+}
+
+
+.icon:first-child{
+	border-radius: 1rem 0 0 0;
+}
+
+
+.icon:last-child{
+	border-radius: 0 0 0 1rem;
+}
+
+
+.icon:hover{
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+
+
+/* Media queries */
+@media screen and (max-width: 800px){
+	.main{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 400px){
+	.contenedor{
+		width: 100%;
+	}
+}
